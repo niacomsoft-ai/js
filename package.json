@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
-  }
+  },
+  "workspaces": [
+    "packages/dts"
+  ]
 }
