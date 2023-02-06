@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Typed Declaration!",
   "main": "index.d.ts",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "types": "index.d.ts",
+  "typings": "index.d.ts",
+  "devDependencies": {
+    "@types/node": "^18.11.19",
+    "typescript": "^4.9.5"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/niacomsoft-ai/js/issues"
   },
-  "homepage": "https://github.com/niacomsoft-ai/js#readme"
+  "homepage": "https://github.com/niacomsoft-ai/js#readme",
+  "files": [
+    "index.d.ts",
+    "typings/index.d.ts",
+    "typings/**/*.d.ts"
+  ]
 }
