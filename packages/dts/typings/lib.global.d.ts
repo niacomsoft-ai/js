@@ -67,5 +67,37 @@ declare global {
 		 * @see {@link __NIACOMSOFT_EMPTY_STRING__}
 		 */
 		empty(): string;
+
+		/**
+		 * @description 当字符串 {@link s} 是否等于 undefined、null 或者 {@link empty} 时，返回 true；否则返回 false。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.NullableType<string>} s 需要校验的字符串。
+		 * @returns {boolean}
+		 * @see {@link Object.isUndefined}
+		 * @see {@link Object.isNull}
+		 */
+		isNullOrEmpty(s: sys.NullableType<string>): boolean;
+
+		/**
+		 * @description 当字符串 {@link s} 是否等于 undefined、null、{@link empty} 或空格符时，返回 true；否则返回 false。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.NullableType<string>} s 需要校验的字符串。
+		 * @returns {boolean}
+		 * @see {@link String.isNullOrEmpty}
+		 */
+		isNullOrWhiteSpace(s: sys.NullableType<string>): boolean;
+
+		/**
+		 * @description 格式化字符串。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.NullableType<string>} formatter 格式化模板字符串。
+		 * @param {...Array<any>} args 格式化参数数组。
+		 * @returns {string}
+		 * @see https://learn.microsoft.com/zh-cn/dotnet/api/system.string.format?view=net-7.0#system-string-format(system-string-system-object())
+		 */
+		format(formatter: sys.NullableType<string>, ...args: Array<any>): string;
 	}
 }
