@@ -3,5 +3,13 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-/// <reference path="./types/sys.undefined-type.d.ts" />
-/// <reference path="./types/sys.nullable-type.d.ts" />
+declare namespace sys {
+	/**
+	 * @description 可能为 undefined 的 {@link T} 类型值。
+	 * @author Wang Yucai
+	 *
+	 * @typedef {UndefinedType}
+	 * @template T
+	 */
+	type UndefinedType<T> = T | undefined;
+}
