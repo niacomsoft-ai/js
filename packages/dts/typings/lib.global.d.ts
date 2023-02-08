@@ -99,5 +99,15 @@ declare global {
 		 * @see https://learn.microsoft.com/zh-cn/dotnet/api/system.string.format?view=net-7.0#system-string-format(system-string-system-object())
 		 */
 		format(formatter: sys.NullableType<string>, ...args: Array<any>): string;
+
+		/**
+		 * @description 当 {@link s} 等于 undefined 或 null 时，将返回 {@link $default}。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.NullableType<string>} s 需要验证的字符串。
+		 * @param {string} [$default=""] 当 {@link s} 等于 undefined 或 null 时默认的返回值。
+		 * @returns {string}
+		 */
+		safeGet(s: sys.NullableType<string>, $default: string = ""): string;
 	}
 }
