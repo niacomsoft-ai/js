@@ -23,12 +23,15 @@
     "npm-version:pre-major": "npm version premajor --no-git-tag-version --workspaces",
     "npm-version:patch": "npm version patch --no-git-tag-version --workspaces",
     "npm-version:minor": "npm version minor --no-git-tag-version --workspaces",
-    "npm-version:major": "npm version major --no-git-tag-version --workspaces"
+    "npm-version:major": "npm version major --no-git-tag-version --workspaces",
+    "compile:corelib": "npm run compile -w packages/corelib",
+    "compile": "npm run compile:corelib"
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
   },
   "workspaces": [
-    "packages/dts"
+    "packages/dts",
+    "packages/corelib"
   ]
 }
