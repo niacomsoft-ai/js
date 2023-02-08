@@ -15,3 +15,7 @@ String.isNullOrEmpty = (s: sys.NullableType<string>): boolean => {
 String.isNullOrWhiteSpace = (s: sys.NullableType<string>): boolean => {
 	return String.isNullOrEmpty(s?.trim());
 };
+
+String.safeGet = (s: sys.NullableType<string>, $default: sys.NullableType<string> = ""): string => {
+	return s ?? $default ?? String.empty();
+};
