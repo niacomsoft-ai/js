@@ -3,6 +3,4 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-import "reflect-metadata";
-import "./native";
-export { sealed } from "./decorators";
+export { sealedDecorator as sealed } from "./sealed-decorator";

@@ -3,6 +3,14 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-import "reflect-metadata";
-import "./native";
-export { sealed } from "./decorators";
+/**
+ * @description 用于描述类是密闭的。
+ * @author Wang Yucai
+ *
+ * @param {Function} constructor 类的构造方法。
+ * @exports
+ */
+export function sealedDecorator(constructor: Function): void {
+	Object.seal(constructor);
+	Object.seal(constructor.prototype);
+}
