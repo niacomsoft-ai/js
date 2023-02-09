@@ -12,8 +12,8 @@
 
 ## Dependencies
 
-
 |Package's URL|
 |---------|
 |[deep-equal](https://github.com/inspect-js/node-deep-equal)|
 |[string-template](https://www.npmjs.com/package/string-template)|
+|[reflect-metadata](https://www.npmjs.com/package/reflect-metadata)|
