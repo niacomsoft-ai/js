@@ -5,4 +5,4 @@
 
 import "reflect-metadata";
 import "./native";
-export { sealed } from "./decorators";
+export { obsolete, sealed } from "./decorators";

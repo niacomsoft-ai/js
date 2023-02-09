@@ -4,3 +4,4 @@
 // *******************************************************************************************************************************************************
 
 export { sealedDecorator as sealed } from "./sealed-decorator";
+export { obsoleteDecorator as obsolete } from "./obsolete-decorator";
