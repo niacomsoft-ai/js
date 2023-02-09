@@ -101,7 +101,7 @@ declare global {
 		format(formatter: sys.NullableType<string>, ...args: Array<any>): string;
 
 		/**
-		 * @description 当 {@link s} 等于 undefined 或 null 时，将返回 {@link $default}。
+		 * @description 当 {@link s} 等于 undefined 或 null 或 {@link String.empty} 时，将返回 {@link $default}。
 		 * @author Wang Yucai
 		 *
 		 * @param {sys.NullableType<string>} s 需要验证的字符串。
