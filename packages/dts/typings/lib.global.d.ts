@@ -110,4 +110,22 @@ declare global {
 		 */
 		safeGet(s: sys.NullableType<string>, $default: string = ""): string;
 	}
+
+	/**
+	 * @description 为 Number 类型提供的静态扩展方法。
+	 * @author Wang Yucai
+	 *
+	 * @interface NumberConstructor
+	 * @typedef {NumberConstructor}
+	 */
+	interface NumberConstructor {
+		/**
+		 * @description 尝试将 {@link s} 转换成 number 类型值。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.NullableType<string>} s 数字字符串。
+		 * @returns {Readonly<sys.ParsedResult<number>>}
+		 */
+		tryParse(s: sys.NullableType<string>): Readonly<sys.ParsedResult<number>>;
+	}
 }

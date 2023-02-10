@@ -6,3 +6,4 @@
 import "./global-defaults";
 import "./object-extensions";
 import "./string-extensions";
+import "./number-extensions";
