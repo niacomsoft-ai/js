@@ -5,5 +5,5 @@
 
 import "reflect-metadata";
 import "./native";
-export { obsolete, sealed, typename } from "./decorators";
+export { obsolete, sealed } from "./decorators";
 export { CultureInfo, CultureInfoFactory } from "./globalization";
