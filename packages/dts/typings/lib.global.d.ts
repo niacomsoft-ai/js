@@ -60,6 +60,14 @@ declare global {
 	var __NIACOMSOFT_CULTUREINFO_FACTORY__: sys.globalization.ICultureInfoFactoryConstructor;
 
 	/**
+	 * @description {@link sys.globalization.CultureInfoOptions} 文化区域配置。
+	 * @author Wang Yucai
+	 *
+	 * @type {sys.globalization.CultureInfoOptions}
+	 */
+	var __NIACOMSOFT_CULTUREINFO_OPTIONS__: sys.globalization.CultureInfoOptions;
+
+	/**
 	 * @description 为 {@link String} 类型提供的静态扩展方法。
 	 * @author Wang Yucai
 	 *
