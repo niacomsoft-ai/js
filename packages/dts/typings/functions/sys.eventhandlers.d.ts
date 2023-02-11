@@ -19,14 +19,23 @@ declare namespace sys {
 		 * @param {sys.EventArgs} e 事件参数。
 		 */
 		(e: sys.EventArgs): void;
+	}
 
+	/**
+	 * @description 定义了处理事件的方法委托。
+	 * @author Wang Yucai
+	 *
+	 * @interface EventHandler
+	 * @typedef {EventHandler}
+	 * @template T 派生自 {@link sys.EventArgs} 类型的对象实例。
+	 */
+	interface EventHandler<T extends sys.EventArgs> {
 		/**
 		 * @description 定义了处理事件的方法委托。
 		 * @author Wang Yucai
 		 *
-		 * @template T 派生自 {@link sys.EventArgs} 类型的对象实例。
 		 * @param {T} e {@link T} 类型的事件参数。
 		 */
-		<T extends sys.EventArgs>(e: T): void;
+		(e: T): void;
 	}
 }
