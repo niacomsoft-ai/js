@@ -1,0 +1,7 @@
+{
+    "exception_message": "The application threw an unhandled exception.",
+    "argument_exception_message": "Bad method parameter value.",
+    "ArgumentException_with_invalid_argument_name": "Bad method parameter (see {0}) value.",
+    "ArgumentNullException": "The specified method parameter is required.",
+    "ArgumentNullException_with_argument_name": "The parameter {0} is required"
+}

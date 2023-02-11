@@ -28,7 +28,7 @@
     "npm-version:patch": "npm version patch --no-git-tag-version --workspaces",
     "npm-version:minor": "npm version minor --no-git-tag-version --workspaces",
     "npm-version:major": "npm version major --no-git-tag-version --workspaces",
-    "compile:corelib": "npm run compile -w packages/corelib",
+    "compile:corelib": "npm run compile -w packages/corelib && npm run compile -w packages/i18n-resources",
     "compile": "npm run compile:corelib"
   },
   "devDependencies": {
@@ -36,6 +36,7 @@
   },
   "workspaces": [
     "packages/dts",
-    "packages/corelib"
+    "packages/corelib",
+    "packages/i18n-resources"
   ]
 }
