@@ -5,3 +5,4 @@
 
 /// <reference path="./functions/sys.action.d.ts" />
 /// <reference path="./functions/sys.func.d.ts" />
+/// <reference path="./functions/sys.eventhandlers.d.ts" />

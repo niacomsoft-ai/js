@@ -6,3 +6,4 @@
 /// <reference path="./types/sys.undefined-type.d.ts" />
 /// <reference path="./types/sys.nullable-type.d.ts" />
 /// <reference path="./types/sys.parsed-result.d.ts" />
+/// <reference path="./types/sys.eventargs.d.ts" />
