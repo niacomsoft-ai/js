@@ -7,4 +7,5 @@ import "reflect-metadata";
 import "./native";
 export { obsolete, sealed } from "./decorators";
 export { CultureInfo, CultureInfoFactory } from "./globalization";
-export { ResourceManager } from "./resources";
+export { I18nextResourceManager, ResourceManager } from "./resources";
+
