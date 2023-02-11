@@ -1,7 +1,0 @@
-{
-    "Exception": "應用程序引發了一個未處理的異常。",
-    "ArgumentException": "錯誤的方法參數。",
-    "ArgumentException_with_invalid_argument_name": "錯誤的方法參數：{0}。",
-    "ArgumentNullException": "指定的方法參數是必需的。",
-    "ArgumentNullException_with_argument_name": "方法參數 {0} 是必需的。"
-}
