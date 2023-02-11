@@ -1,6 +1,6 @@
 {
   "name": "@niacomsoft/typed-declaration",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Typed Declaration!",
   "main": "index.d.ts",
   "types": "index.d.ts",

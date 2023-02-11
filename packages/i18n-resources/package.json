@@ -1,6 +1,6 @@
 {
     "name": "@niacomsoft/multiple-languages-pack",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Multiple Languages Pack Supported!",
     "main": "compile/index.js",
     "types": "compile/index.d.ts",
