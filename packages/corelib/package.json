@@ -33,6 +33,7 @@
     "@niacomsoft/multiple-languages-pack": "^1.0.0",
     "@niacomsoft/typed-declaration": "^1.0.0",
     "deep-equal": "^2.2.0",
+    "i18next": "^22.4.9",
     "reflect-metadata": "^0.1.13",
     "string-template": "^1.0.0"
   },
