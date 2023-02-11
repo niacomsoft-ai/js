@@ -52,6 +52,14 @@ declare global {
 	var __NIACOMSOFT_EMPTY_STRING__: string;
 
 	/**
+	 * @description {@link sys.globalization.ICultureInfoFactory} 工厂方法。
+	 * @author Wang Yucai
+	 *
+	 * @type {sys.globalization.ICultureInfoFactoryConstructor}
+	 */
+	var __NIACOMSOFT_CULTUREINFO_FACTORY__: sys.globalization.ICultureInfoFactoryConstructor;
+
+	/**
 	 * @description 为 {@link String} 类型提供的静态扩展方法。
 	 * @author Wang Yucai
 	 *
