@@ -1,0 +1,7 @@
+{
+    "Exception": "应用程序引发了一个未处理的异常。",
+    "ArgumentException": "错误的方法参数。",
+    "ArgumentException_with_invalid_argument_name": "错误的方法参数：{0}。",
+    "ArgumentNullException": "指定的方法参数是必需的。",
+    "ArgumentNullException_with_argument_name": "方法参数 {0} 是必需的。"
+}
