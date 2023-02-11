@@ -3,7 +3,7 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-import "./global-defaults";
+import "./initialize";
 import "./object-extensions";
 import "./string-extensions";
 import "./number-extensions";
