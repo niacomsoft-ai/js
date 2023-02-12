@@ -29,3 +29,16 @@ Number.tryParse = (s: sys.NullableType<string>): sys.ParsedResult<number> => {
 		value,
 	};
 };
+
+function __toCurrencyImpl__(): string;
+function __toCurrencyImpl__(currencySymbol: string): string;
+function __toCurrencyImpl__(formatter: sys.IFormatProvider<number>, culture?: sys.globalization.ICultureInfo): string;
+function __toCurrencyImpl__(this: number, argA?: any, argB?: any): string {
+	if (typeof argA === "undefined") return this.toFixed(2);
+	else {
+		if (typeof argA === "string") return `${argA} ${this.toFixed(2)}`;
+		return (argA as sys.IFormatProvider<number>).format(this, argB);
+	}
+}
+
+Number.prototype.toCurrency = __toCurrencyImpl__;

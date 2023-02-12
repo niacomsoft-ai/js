@@ -152,5 +152,32 @@ declare global {
 	 * @interface Number
 	 * @typedef {Number}
 	 */
-	interface Number {}
+	interface Number {
+		/**
+		 * @description 将 number 值转换成货币字符串（小数点后两位，不包含缩写符和货币符）。
+		 * @author Wang Yucai
+		 *
+		 * @returns {string}
+		 */
+		toCurrency(): string;
+
+		/**
+		 * @description 将 number 值转换成货币字符串。
+		 * @author Wang Yucai
+		 *
+		 * @param {string} currencySymbol 货币符号。
+		 * @returns {string}
+		 */
+		toCurrency(currencySymbol: string): string;
+
+		/**
+		 * @description 将 number 值转换成货币字符串。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.IFormatProvider<number>} formatter 数值格式化程序。
+		 * @param {sys.globalization.ICultureInfo} [culture] 当前的文化区域。
+		 * @returns {string}
+		 */
+		toCurrency(formatter: sys.IFormatProvider<number>, culture?: sys.globalization.ICultureInfo): string;
+	}
 }
