@@ -3,6 +3,9 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
+import { getInnerResourceManager } from "../functionals";
+import { CultureInfo } from "../globalization";
+
 Number.tryParse = (s: sys.NullableType<string>): sys.ParsedResult<number> => {
 	if (String.isNullOrWhiteSpace(s)) {
 		console.warn(`[WARN]: 字符串 s 可能为一个 undefined、null、空格符。详情参见：%o`, {

@@ -3,10 +3,4 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-import "reflect-metadata";
-import "./native";
-export { FormatProvider } from "./core";
-export { obsolete, sealed } from "./decorators";
-export { getInnerResourceManager } from "./functionals";
-export { CultureInfo, CultureInfoFactory } from "./globalization";
-export { I18nextResourceManager, ResourceManager } from "./resources";
+export { FormatProvider } from "./formatters";

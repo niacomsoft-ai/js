@@ -5,3 +5,4 @@
 
 /// <reference path="./interfaces/sys.globalization.cultureinfo.d.ts" />
 /// <reference path="./interfaces/sys.resources.resource-manager.d.ts" />
+/// <reference path="./interfaces/sys.format-provider.d.ts" />
