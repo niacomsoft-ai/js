@@ -3,5 +3,8 @@
     "argument_exception_message": "错误的方法参数。",
     "ArgumentException_with_invalid_argument_name": "错误的方法参数：{0}。",
     "ArgumentNullException": "指定的方法参数是必需的。",
-    "ArgumentNullException_with_argument_name": "方法参数 {0} 是必需的。"
+    "ArgumentNullException_with_argument_name": "方法参数 {0} 是必需的。",
+    "CurrencyAbbr_rmb": "RMB",
+    "CurrencyAbbr_dollar": "USD",
+    "CurrencyAbbr_euro": "EUR"
 }

@@ -144,4 +144,13 @@ declare global {
 		 */
 		tryParse(s: sys.NullableType<string>): Readonly<sys.ParsedResult<number>>;
 	}
+
+	/**
+	 * @description 为 Number 类型提供的扩展方法。
+	 * @author Wang Yucai
+	 *
+	 * @interface Number
+	 * @typedef {Number}
+	 */
+	interface Number {}
 }
