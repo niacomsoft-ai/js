@@ -3,4 +3,4 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-export { FormatProvider } from "./formatters";
+export { CurrencyFormatter, FormatProvider } from "./formatters";
