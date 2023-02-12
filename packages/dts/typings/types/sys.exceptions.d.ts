@@ -3,9 +3,23 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-/// <reference path="./types/sys.undefined-type.d.ts" />
-/// <reference path="./types/sys.nullable-type.d.ts" />
-/// <reference path="./types/sys.parsed-result.d.ts" />
-/// <reference path="./types/sys.eventargs.d.ts" />
-/// <reference path="./types/sys.globalization.cultureinfo-options.d.ts" />
-/// <reference path="./types/sys.exceptions.d.ts" />
+declare namespace sys {
+	/**
+	 * @description 运行时异常。
+	 * @author Wang Yucai
+	 *
+	 * @interface Exception
+	 * @typedef {Exception}
+	 * @extends {Error}
+	 */
+	interface Exception extends Error {
+		/**
+		 * @description 获取 {@link Error} 类型的对象实例，用于表示引发此异常的 {@link Error} 类型的对象实例。
+		 * @author Wang Yucai
+		 *
+		 * @readonly
+		 * @type {Error?}
+		 */
+		get innerException(): Error?;
+	}
+}

@@ -3,9 +3,23 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-/// <reference path="./types/sys.undefined-type.d.ts" />
-/// <reference path="./types/sys.nullable-type.d.ts" />
-/// <reference path="./types/sys.parsed-result.d.ts" />
-/// <reference path="./types/sys.eventargs.d.ts" />
-/// <reference path="./types/sys.globalization.cultureinfo-options.d.ts" />
-/// <reference path="./types/sys.exceptions.d.ts" />
+
+/**
+ * @description 提供了运行时异常相关的方法。
+ * @author Wang Yucai
+ *
+ * @export
+ * @class Exception
+ * @typedef {Exception}
+ * @implements {sys.Exception}
+ */
+export class Exception implements sys.Exception {
+
+
+    get innerException(): Error {
+        throw new Error("Method not implemented.");
+    }
+    name: string;
+    message: string;
+    stack?: string;
+}
