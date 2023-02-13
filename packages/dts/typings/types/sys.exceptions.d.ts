@@ -10,9 +10,8 @@ declare namespace sys {
 	 *
 	 * @interface Exception
 	 * @typedef {Exception}
-	 * @extends {Error}
 	 */
-	interface Exception extends Error {
+	interface Exception {
 		/**
 		 * @description 获取 {@link Error} 类型的对象实例，用于表示引发此异常的 {@link Error} 类型的对象实例。
 		 * @author Wang Yucai
