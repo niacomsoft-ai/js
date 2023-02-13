@@ -3,5 +3,5 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-export { Exception } from "./exception";
+export { ArgumentException, Exception } from "./exception";
 export { CurrencyFormatter, FormatProvider } from "./formatters";

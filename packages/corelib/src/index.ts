@@ -5,7 +5,7 @@
 
 import "reflect-metadata";
 import "./native";
-export { CurrencyFormatter, Exception, FormatProvider } from "./core";
+export { ArgumentException, CurrencyFormatter, Exception, FormatProvider } from "./core";
 export { obsolete, sealed } from "./decorators";
 export { getInnerResourceManager } from "./functionals";
 export { CultureInfo, CultureInfoFactory } from "./globalization";
