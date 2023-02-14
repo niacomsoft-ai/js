@@ -10,6 +10,6 @@
  */
 
 import "./initialize";
+import "./number-extensions";
 import "./object-extensions";
 import "./string-extensions";
-import "./number-extensions";
