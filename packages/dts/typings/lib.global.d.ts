@@ -188,5 +188,28 @@ declare global {
 	 * @interface Error
 	 * @typedef {Error}
 	 */
-	interface Error {}
+	interface Error {
+		/**
+		 * @description 抛出此异常。
+		 * @author Wang Yucai
+		 */
+		throw(): void;
+
+		/**
+		 * @description 当 {@link where} 等于 true 时，将引发此异常。
+		 * @author Wang Yucai
+		 *
+		 * @param {boolean} where 条件表达式。
+		 */
+		trueThrow(where: boolean): void;
+
+		/**
+		 * @description 当条件表达式 {@link where} 返回 true 时，将引发此异常。
+		 * @author Wang Yucai
+		 *
+		 * @param {(...args: Array<any>) => boolean} where 条件表达式。
+		 * @param {...Array<any>} args 上下文参数。
+		 */
+		trueThrow(where: (...args: Array<any>) => boolean, ...args: Array<any>): void;
+	}
 }

@@ -3,14 +3,15 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
-/**
- * @description JavaScript 原生对象扩展方法。
- *
- * @packageDocumentation
- */
+Error.prototype.throw = function (): void {
+	throw this;
+};
 
-import "./error-extensions";
-import "./initialize";
-import "./number-extensions";
-import "./object-extensions";
-import "./string-extensions";
+function __trueThrowImpl__(where: boolean): void;
+function __trueThrowImpl__(where: (...args: Array<any>) => void, ...args: Array<any>): void;
+function __trueThrowImpl__(this: any, where: any, ...args: Array<any>): void {
+	if (typeof where === "boolean" && where) this.throw();
+	else if (where(args)) this.throw();
+}
+
+Error.prototype.trueThrow = __trueThrowImpl__;
