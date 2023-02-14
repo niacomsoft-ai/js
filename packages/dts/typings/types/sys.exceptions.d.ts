@@ -21,4 +21,15 @@ declare namespace sys {
 		 */
 		get innerException(): Error?;
 	}
+
+	/**
+	 * @description 运行时异常构造函数工厂约束。
+	 * @author Wang Yucai
+	 *
+	 * @interface ExceptionConstructor
+	 * @typedef {ExceptionConstructor}
+	 */
+	interface ExceptionConstructor {
+		new (...args: Array<any>): sys.Exception;
+	}
 }

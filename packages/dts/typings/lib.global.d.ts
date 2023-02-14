@@ -180,4 +180,23 @@ declare global {
 		 */
 		toCurrency(formatter: sys.IFormatProvider<number>, culture?: sys.globalization.ICultureInfo): string;
 	}
+
+	/**
+	 * @description 为 {@link Error} 类型提供的静态扩展方法。
+	 * @author Wang Yucai
+	 *
+	 * @interface ErrorConstructor
+	 * @typedef {ErrorConstructor}
+	 */
+	interface ErrorConstructor {
+		/**
+		 * @description 创建一个实现了 {@link sys.Exception} 类型接口的对象实例。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.ExceptionConstructor} factory 异常工厂方法。
+		 * @param {...Array<any>} args 工厂方法参数。
+		 * @returns {sys.Exception}
+		 */
+		createException(factory: sys.ExceptionConstructor, ...args: Array<any>): sys.Exception;
+	}
 }
