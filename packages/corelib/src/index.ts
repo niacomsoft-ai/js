@@ -3,9 +3,15 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
+/**
+ * @description 核心类库。
+ *
+ * @packageDocumentation
+ */
+
 import "reflect-metadata";
 import "./native";
-export { ArgumentException, CurrencyFormatter, Exception, FormatProvider } from "./core";
+export { ArgumentException, ArgumentNullException, CurrencyFormatter, Exception, FormatProvider } from "./core";
 export { obsolete, sealed } from "./decorators";
 export { getInnerResourceManager } from "./functionals";
 export { CultureInfo, CultureInfoFactory } from "./globalization";

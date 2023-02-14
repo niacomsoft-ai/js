@@ -3,5 +3,11 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
+/**
+ * @description 全球化相关类库。
+ *
+ * @packageDocumentation
+ */
+
 export { CultureInfo } from "./cultureinfo";
 export { CultureInfoFactory } from "./cultureinfo-factory";

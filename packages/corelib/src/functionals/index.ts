@@ -3,4 +3,10 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
+/**
+ * @description 函数库。
+ *
+ * @packageDocumentation
+ */
+
 export { getInnerResourceManager } from "./resource-manager";
