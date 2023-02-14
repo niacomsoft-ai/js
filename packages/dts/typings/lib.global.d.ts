@@ -180,4 +180,13 @@ declare global {
 		 */
 		toCurrency(formatter: sys.IFormatProvider<number>, culture?: sys.globalization.ICultureInfo): string;
 	}
+
+	/**
+	 * @description 为 {@link Error} 类型提供的扩展方法。
+	 * @author Wang Yucai
+	 *
+	 * @interface Error
+	 * @typedef {Error}
+	 */
+	interface Error {}
 }
