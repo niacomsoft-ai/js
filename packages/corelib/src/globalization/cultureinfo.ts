@@ -53,11 +53,11 @@ export class CultureInfo implements sys.globalization.ICultureInfo {
 	 *
 	 * @static
 	 * @param {sys.globalization.ICultureInfo} culture 新的文化区域信息。
-	 * @param {?sys.EventHandler<sys.globalization.ICultureInfo>} [callback] 重置成功后的回调方法。
+	 * @param {?sys.EventHandler<sys.globalization.CultureInfoChangedEventArgs>} [callback] 重置成功后的回调方法。
 	 */
 	static setCurrentCulture(
 		culture: sys.globalization.ICultureInfo,
-		callback?: sys.EventHandler<sys.globalization.ICultureInfo>
+		callback?: sys.EventHandler<sys.globalization.CultureInfoChangedEventArgs>
 	): void {
 		i18next
 			.changeLanguage(culture.name)
@@ -75,7 +75,7 @@ export class CultureInfo implements sys.globalization.ICultureInfo {
 				});
 				__NIACOMSOFT_CULTUREINFO_OPTIONS__.currentCulture = culture;
 				__NIACOMSOFT_CULTUREINFO_OPTIONS__.currentUICulture = culture;
-				if (!callback) callback(culture);
+				if (!callback) callback({ culture });
 			})
 			.catch((error) => {
 				console.error(`[ERROR]: 切换当前线程的 CurrentCulture 属性失败。详情参见：%o`, {
