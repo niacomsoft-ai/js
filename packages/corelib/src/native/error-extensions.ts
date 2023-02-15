@@ -8,7 +8,7 @@ Error.prototype.throw = function (): void {
 };
 
 function __trueThrowImpl__(where: boolean): void;
-function __trueThrowImpl__(where: (...args: Array<any>) => void, ...args: Array<any>): void;
+function __trueThrowImpl__(where: (...args: Array<any>) => boolean, ...args: Array<any>): void;
 function __trueThrowImpl__(this: any, where: any, ...args: Array<any>): void {
 	if (typeof where === "boolean" && where) this.throw();
 	else if (where(args)) this.throw();

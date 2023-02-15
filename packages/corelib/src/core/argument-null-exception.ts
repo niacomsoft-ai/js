@@ -59,7 +59,7 @@ export class ArgumentNullException extends Exception {
 				ContextMetadata: null,
 			});
 
-			throw ArgumentNullException.createException(argName);
+			ArgumentNullException.createException(argName).throw();
 		}
 	}
 }
