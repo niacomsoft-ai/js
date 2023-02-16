@@ -5,6 +5,7 @@
 
 import { getInnerResourceManager } from "../functionals";
 import { CultureInfo } from "../globalization";
+import { ArgumentException } from "../core/argument-exception";
 
 Number.tryParse = (s: sys.NullableType<string>): sys.ParsedResult<number> => {
 	if (String.isNullOrWhiteSpace(s)) {
@@ -28,6 +29,13 @@ Number.tryParse = (s: sys.NullableType<string>): sys.ParsedResult<number> => {
 		sourceString: s,
 		value,
 	};
+};
+
+Number.parse = (s: sys.NullableType<string>): number => {
+	const result = Number.tryParse(s);
+	if (!result.isCompleted)
+		new ArgumentException(getInnerResourceManager().getString("ArgumentException_number_parse_failure")).throw();
+	return result.value;
 };
 
 function __toCurrencyImpl__(): string;

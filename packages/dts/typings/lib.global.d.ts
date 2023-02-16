@@ -155,13 +155,22 @@ declare global {
 	 */
 	interface NumberConstructor {
 		/**
-		 * @description 尝试将 {@link s} 转换成 number 类型值。
+		 * @description 尝试将 {@link s} 转换成 Number 类型值。
 		 * @author Wang Yucai
 		 *
 		 * @param {sys.NullableType<string>} s 数字字符串。
 		 * @returns {Readonly<sys.ParsedResult<number>>}
 		 */
 		tryParse(s: sys.NullableType<string>): Readonly<sys.ParsedResult<number>>;
+
+		/**
+		 * @description 将字符串 {@link s} 转换成等效的 Number 类型值。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.NullableType<string>} s
+		 * @returns {number}
+		 */
+		parse(s: sys.NullableType<string>): number;
 	}
 
 	/**
