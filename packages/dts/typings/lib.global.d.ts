@@ -171,6 +171,16 @@ declare global {
 		 * @returns {number}
 		 */
 		parse(s: sys.NullableType<string>): number;
+
+		/**
+		 * @description 当 {@link num} 等于 undefined 或 null 时，返回 {@link $default}；否则返回 {@link num}。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.NullableType<number>} num 可能为空的数值。
+		 * @param {number} [$default=0] 默认值。
+		 * @returns {number}
+		 */
+		safeGet(num: sys.NullableType<number>, $default: number = 0): number;
 	}
 
 	/**

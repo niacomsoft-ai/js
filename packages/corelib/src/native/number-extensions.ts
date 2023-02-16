@@ -38,6 +38,10 @@ Number.parse = (s: sys.NullableType<string>): number => {
 	return result.value;
 };
 
+Number.safeGet = (num: sys.NullableType<number>, $default: number = 0): number => {
+	return num ?? $default ?? 0;
+};
+
 function __toCurrencyImpl__(): string;
 function __toCurrencyImpl__(currencySymbol: string): string;
 function __toCurrencyImpl__(formatter: sys.IFormatProvider<number>, culture?: sys.globalization.ICultureInfo): string;
