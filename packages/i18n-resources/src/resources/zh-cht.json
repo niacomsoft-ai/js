@@ -6,5 +6,6 @@
     "ArgumentNullException_with_argument_name": "方法參數 {0} 是必需的。",
     "CurrencyAbbr_rmb": "CNY",
     "CurrencyAbbr_dollar": "USD",
-    "CurrencyAbbr_euro": "EUR"
+    "CurrencyAbbr_euro": "EUR",
+    "ArgumentException_number_parse_failure": "無法將字符串 “s”轉換成一個 “Number”。"
 }
