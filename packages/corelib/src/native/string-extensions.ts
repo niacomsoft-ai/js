@@ -26,3 +26,7 @@ String.safeGet = (s: sys.NullableType<string>, $default: sys.NullableType<string
 String.format = (formatter: sys.NullableType<string>, ...args: Array<any>): string => {
 	return stringTemplate(String.safeGet(formatter, String.empty()), args);
 };
+
+String.prototype.equals = function (this: string, s: string, ignoreCasing: boolean = false): boolean {
+	return ignoreCasing ? this.toLowerCase() === s.toLowerCase() : this === s;
+};

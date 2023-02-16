@@ -128,6 +128,25 @@ declare global {
 	}
 
 	/**
+	 * @description 为 String 类型提供的扩展方法。
+	 * @author Wang Yucai
+	 *
+	 * @interface String
+	 * @typedef {String}
+	 */
+	interface String {
+		/**
+		 * @description 用于校验字符串与 {@link s} 是否相等。
+		 * @author Wang Yucai
+		 *
+		 * @param {string} s 需要对比的字符串。
+		 * @param {boolean} [ignoreCasing=false] 是否忽略大小写。
+		 * @returns {boolean}
+		 */
+		equals(s: string, ignoreCasing: boolean = false): boolean;
+	}
+
+	/**
 	 * @description 为 Number 类型提供的静态扩展方法。
 	 * @author Wang Yucai
 	 *
