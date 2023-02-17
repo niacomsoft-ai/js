@@ -40,15 +40,6 @@ declare namespace sys {
 			start(ticks?: sys.EventHandler<sys.EventArgs>): void;
 
 			/**
-			 * @description (可等待的方法) 启动计时器。
-			 * @author Wang Yucai
-			 *
-			 * @returns {Promise<void>}
-			 * @async
-			 */
-			start(): Promise<void>;
-
-			/**
 			 * @description 停止计时器。
 			 * @author Wang Yucai
 			 */
