@@ -14,3 +14,4 @@ export { ArgumentNullException } from "./argument-null-exception";
 export { Exception } from "./exception";
 export { CurrencyFormatter, FormatProvider } from "./formatters";
 export { StringBuilder } from "./text";
+export { DelayTimer, IntervalTimer } from "./utilities";

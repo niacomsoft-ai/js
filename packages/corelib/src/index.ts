@@ -11,7 +11,16 @@
 
 import "reflect-metadata";
 import "./native";
-export { ArgumentException, ArgumentNullException, CurrencyFormatter, Exception, FormatProvider, StringBuilder } from "./core";
+export {
+	ArgumentException,
+	ArgumentNullException,
+	CurrencyFormatter,
+	DelayTimer,
+	Exception,
+	FormatProvider,
+	IntervalTimer,
+	StringBuilder,
+} from "./core";
 export { obsolete, sealed } from "./decorators";
 export { getInnerResourceManager } from "./functionals";
 export { CultureInfo, CultureInfoFactory } from "./globalization";

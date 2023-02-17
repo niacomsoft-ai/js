@@ -3,6 +3,7 @@
 // COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.
 // *******************************************************************************************************************************************************
 
+import { sealed } from "../../decorators";
 import { getInnerResourceManager } from "../../functionals";
 import { ArgumentException } from "../argument-exception";
 
@@ -56,6 +57,18 @@ abstract class Timer implements sys.timers.ITimer {
 	 */
 	protected abstract get pureHandler(): TimerHandler;
 
+	/**
+	 * @description 获取一个 Number 类型值，用于表示 JavaScript 原生计时器唯一标识。
+	 * @author Wang Yucai
+	 *
+	 * @protected
+	 * @readonly
+	 * @type {number}
+	 */
+	protected get pureHandlerId(): number {
+		return this.m_timerId;
+	}
+
 	get interval(): number {
 		return this.m_interval;
 	}
@@ -101,4 +114,44 @@ abstract class Timer implements sys.timers.ITimer {
 	 * @abstract
 	 */
 	protected abstract internalStop(): void;
+}
+
+/**
+ * @description 提供了间隔式时钟相关的方法。密闭的，不可以从此类型派生。
+ * @author Wang Yucai
+ *
+ * @export
+ * @class IntervalTimer
+ * @typedef {IntervalTimer}
+ * @extends {Timer}
+ * @see {@link setInterval}
+ */
+@sealed
+export class IntervalTimer extends Timer {
+	protected get pureHandler(): TimerHandler {
+		return setInterval;
+	}
+	protected internalStop(): void {
+		clearInterval(this.pureHandlerId);
+	}
+}
+
+/**
+ * @description 提供了延迟性的时钟相关的方法。密闭的，不可以从此类型派生。
+ * @author Wang Yucai
+ *
+ * @export
+ * @class DelayTimer
+ * @typedef {DelayTimer}
+ * @extends {Timer}
+ * @see {@link setTimeout}
+ */
+@sealed
+export class DelayTimer extends Timer {
+	protected get pureHandler(): TimerHandler {
+		return setTimeout;
+	}
+	protected internalStop(): void {
+		clearTimeout(this.pureHandlerId);
+	}
 }
