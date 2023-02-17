@@ -7,5 +7,6 @@
     "CurrencyAbbr_rmb": "RMB",
     "CurrencyAbbr_dollar": "USD",
     "CurrencyAbbr_euro": "EUR",
-    "ArgumentException_number_parse_failure": "无法将字符串 “s”转换成一个 “Number”。"
+    "ArgumentException_number_parse_failure": "无法将字符串 “s”转换成一个 “Number”。",
+    "Exception_invalid_timer_interval_value": "错误的计时器时间间隔值。"
 }

@@ -7,5 +7,6 @@
     "CurrencyAbbr_rmb": "CNY",
     "CurrencyAbbr_dollar": "USD",
     "CurrencyAbbr_euro": "EUR",
-    "ArgumentException_number_parse_failure": "The string \"s\" cannot be converted into a \"Number\"."
+    "ArgumentException_number_parse_failure": "The string \"s\" cannot be converted into a \"Number\".",
+    "Exception_invalid_timer_interval_value": "Bad timer interval value."
 }
