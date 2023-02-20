@@ -1,6 +1,6 @@
 {
   "name": "@niacomsoft/corelib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Core Features!",
   "main": "compile/index.js",
   "types": "compile/index.d.ts",
