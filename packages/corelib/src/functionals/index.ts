@@ -10,3 +10,4 @@
  */
 
 export { getInnerResourceManager } from "./resource-manager";
+export { createTimer } from "./timer";

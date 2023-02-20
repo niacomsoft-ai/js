@@ -22,6 +22,6 @@ export {
 	StringBuilder,
 } from "./core";
 export { obsolete, sealed } from "./decorators";
-export { getInnerResourceManager } from "./functionals";
+export { createTimer, getInnerResourceManager } from "./functionals";
 export { CultureInfo, CultureInfoFactory } from "./globalization";
 export { I18nextResourceManager, ResourceManager } from "./resources";
