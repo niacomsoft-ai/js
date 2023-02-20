@@ -19,6 +19,7 @@ export {
 	Exception,
 	FormatProvider,
 	IntervalTimer,
+	Stopwatch,
 	StringBuilder,
 } from "./core";
 export { obsolete, sealed } from "./decorators";

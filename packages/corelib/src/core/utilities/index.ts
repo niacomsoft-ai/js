@@ -9,4 +9,5 @@
  * @packageDocumentation
  */
 
+export { Stopwatch } from "./stopwatch";
 export { DelayTimer, IntervalTimer } from "./timers";
