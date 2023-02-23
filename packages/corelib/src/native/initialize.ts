@@ -13,6 +13,10 @@ import { CultureInfo, CultureInfoFactory } from "../globalization";
 
 var __NIACOMSOFT_EMPTY_STRING__: string = "";
 
+var __NIACOMSOFT_TRUE_STRING__: string = "true";
+
+var __NIACOMSOFT_TRUE_NUMBER__: number = 1;
+
 var __NIACOMSOFT_CULTUREINFO_FACTORY__: sys.globalization.ICultureInfoFactoryConstructor = CultureInfoFactory;
 
 var __NIACOMSOFT_CULTUREINFO_OPTIONS__: sys.globalization.CultureInfoOptions = {

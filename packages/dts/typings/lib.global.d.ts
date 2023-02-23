@@ -52,6 +52,22 @@ declare global {
 	var __NIACOMSOFT_EMPTY_STRING__: string;
 
 	/**
+	 * @description True 等效的字符串。
+	 * @author Wang Yucai
+	 *
+	 * @type {string}
+	 */
+	var __NIACOMSOFT_TRUE_STRING__: string;
+
+	/**
+	 * @description True 等效的数值。
+	 * @author Wang Yucai
+	 *
+	 * @type {number}
+	 */
+	var __NIACOMSOFT_TRUE_NUMBER__: number;
+
+	/**
 	 * @description {@link sys.globalization.ICultureInfoFactory} 工厂方法。
 	 * @author Wang Yucai
 	 *
@@ -249,5 +265,30 @@ declare global {
 		 * @param {...Array<any>} args 上下文参数。
 		 */
 		trueThrow(where: sys.FuncX<boolean>, ...args: Array<any>): void;
+	}
+
+	/**
+	 * @description 为 Boolean 类型提供的静态扩展方法。
+	 * @author Wang Yucai
+	 *
+	 * @interface BooleanConstructor
+	 * @typedef {BooleanConstructor}
+	 */
+	interface BooleanConstructor {
+		/**
+		 * @description 获取 true 等效的字符串。
+		 * @author Wang Yucai
+		 *
+		 * @returns {string}
+		 */
+		trueString(): string;
+
+		/**
+		 * @description 获取 true 等效的数值。
+		 * @author Wang Yucai
+		 *
+		 * @returns {number}
+		 */
+		trueNumber(): number;
 	}
 }
