@@ -290,5 +290,14 @@ declare global {
 		 * @returns {number}
 		 */
 		trueNumber(): number;
+
+		/**
+		 * @description 将 {@link value} 转换成 Boolean 类型值。
+		 * @author Wang Yucai
+		 *
+		 * @param {(sys.NullableType<string | number>)} value 字符串或数值。
+		 * @returns {boolean}
+		 */
+		parse(value: sys.NullableType<string | number>): boolean;
 	}
 }
