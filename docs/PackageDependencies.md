@@ -18,3 +18,4 @@
 |[string-template](https://www.npmjs.com/package/string-template)|
 |[reflect-metadata](https://www.npmjs.com/package/reflect-metadata)|
 |[i18next](https://www.i18next.com/)|
+|[dayjs](https://www.npmjs.com/package/dayjs)|

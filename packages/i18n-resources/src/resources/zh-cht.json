@@ -8,5 +8,11 @@
     "CurrencyAbbr_dollar": "USD",
     "CurrencyAbbr_euro": "EUR",
     "ArgumentException_number_parse_failure": "無法將字符串 “s”轉換成一個 “Number”。",
-    "Exception_invalid_timer_interval_value": "錯誤的計時器時間間隔值。"
+    "Exception_invalid_timer_interval_value": "錯誤的計時器時間間隔值。",
+    "DateFormat_default": "YYYY年MM月DD日",
+    "DateTimeFormat_just_now": "剛剛",
+    "DateTimeFormat_minutes_ago": "{0} 分鐘前",
+    "DateTimeFormatl_hours_ago": "{0} 小時前",
+    "DateTimeFormat_days_ago": "{0} 天前",
+    "DateTimeFormat_same_year": "MM月DD日"
 }

@@ -300,4 +300,40 @@ declare global {
 		 */
 		parse(value: sys.NullableType<string | number>): boolean;
 	}
+
+	/**
+	 * @description 为 {@link Date} 类型提供的扩展方法。
+	 * @author Wang Yucai
+	 *
+	 * @interface Date
+	 * @typedef {Date}
+	 */
+	interface Date {
+		/**
+		 * @description 将日期时间格式化为字符串。
+		 * @author Wang Yucai
+		 *
+		 * @param {string} formatter 格式化字符串。
+		 * @returns {string}
+		 * @see https://www.npmjs.com/package/dayjs
+		 */
+		format(formatter: string): string;
+
+		/**
+		 * @description 将日期时间格式化为字符串。
+		 * @author Wang Yucai
+		 *
+		 * @param {sys.IFormatProvider<Date>} formatter 格式化程序。
+		 * @returns {string}
+		 */
+		format(formatter: sys.IFormatProvider<Date>): string;
+
+		/**
+		 * @description 获取日期与 {@link Date.now} 对比的描述。如果日期在 {@link Date.now} 之后，将返回 null。
+		 * @author Wang Yucai
+		 *
+		 * @returns {sys.NullableType<string>}
+		 */
+		getDescription(): sys.NullableType<string>;
+	}
 }
